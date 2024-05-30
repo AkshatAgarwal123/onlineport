@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">My Online Portfolio</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('resume')">Resume</a></li>
+                    <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="page active">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <div class="about-me-left">
+                        <img src="image.png" alt="My Photo" class="profile-img">
+                        <h3>Akshat Agarwal</h3>
+                    </div>
+                    <div class="about-me-right">
+                        <p>
+                            As a dedicated student at Emerald High School in Dublin, CA, I have always aspired to excel in both academics and extracurricular activities. My ultimate career goal is to become a computer scientist, specializing in innovative solutions that address real-world problems. I plan to achieve this by pursuing advanced studies in computer science and gaining hands-on experience through internships and projects. My passion for technology and problem-solving drives me to continually enhance my skills and knowledge in this field.
+                        </p>
+                        <p>
+                            Throughout my high school journey, I have developed strong leadership and organizational skills. As a Taekwondo instructor, I have led and managed several training sessions and tournaments for over 200 students. This role has honed my ability to communicate effectively, manage time efficiently, and inspire others to reach their potential. Additionally, as the president of a non-profit organization, I have organized camps and activities for underprivileged kids in India, demonstrating my commitment to community service and my ability to lead and collaborate with diverse groups.
+                        </p>
+                        <p>
+                            My experiences have taught me the value of perseverance, teamwork, and continuous learning. Whether it is excelling in academics with a 4.2 GPA or leading the basketball team to victory, I have consistently pushed myself to achieve excellence. These accomplishments reflect my determination and dedication to personal and professional growth. Thank you for taking the time to learn about me. I invite you to explore the rest of my site to learn more about my journey and aspirations.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resume" class="page">
+                <h2>Resume</h2>
+                <div class="resume-container">
+                    <img src="0.png" alt="Resume Image" class="resume-img">
+                </div>
+                <p>Below is the PDF version of my resume:</p>
+                <p id="resumeText">file:///Users/manishagarwal/Downloads/Minimalist%20Clean%20Signature%20CV%20Resume%20(1).pdf</p>
+            </section>
+
+            <section id="projects" class="page">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <div class="project-images">
+                        <img src="1.png" alt="Codections Project" class="project-img">
+                        <img src="2.png" alt="Codections Project 2" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        <h3>Codections Project</h3>
+                        <p><strong>Course:</strong> Computer Science Essentials (CSE)</p>
+                        <p><strong>Date:</strong> May 2024</p>
+                        <p><strong>Project Description:</strong> The Codections project aims to create an educational and interactive game that helps students learn and reinforce concepts from their respective computer science class. The game mimics a popular connections-style puzzle game where players match related terms across various computer science topics.</p>
+                        <p><strong>Specific Role:</strong> As the Developer, I was responsible for the backend development. This included creating pseudocode, implementing game logic, managing data, and integrating APIs to fetch and update data dynamically.</p>
+                        <p><strong>Learnings:</strong> Throughout this project, I significantly improved my skills in JavaScript and backend development. I learned how to efficiently manage data and ensure seamless integration with APIs, enhancing the game's functionality and user experience. Additionally, I gained insights into optimizing code for performance and debugging complex issues.</p>
+                        <p><strong>Challenges Overcome:</strong> One of the significant challenges was ensuring the dynamic color-coding and validation of category matches worked correctly. Debugging these features required meticulous attention to detail and a deep understanding of data structures and algorithms. Another challenge was optimizing the game's performance to handle real-time data updates without lag, which involved profiling and refactoring the codebase.</p>
+                        <p><strong>Teamwork/Leadership:</strong> I demonstrated leadership by sharing progress updates and seeking feedback from classmates, thereby fostering a collaborative learning environment. I also provided guidance to peers who were undertaking similar projects, enhancing the collective learning experience.</p>
+                        <p><strong>Key Contributions:</strong></p>
+                        <ul>
+                            <li>Game Logic Implementation</li>
+                            <li>Data Management and API Integration</li>
+                            <li>Backend Logic for Category Matching</li>
+                            <li>Debugging and Optimization</li>
+                        </ul>
+                        <p><strong>Project Documentation:</strong> file:///Users/manishagarwal/Downloads/Codections_%20Electronic%20Documentation.pdf</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-images">
+                        <img src="3.png" alt="Drone Poker Hand Detector Project" class="project-img">
+                        <img src="4.png" alt="Drone Poker Hand Detector Project 2" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        <h3>Drone Poker Hand Detector Project</h3>
+                        <p><strong>Course:</strong> None</p>
+                        <p><strong>Date:</strong> June 2023</p>
+                        <p><strong>Project Description:</strong> The objective of this project was to program a drone to autonomously detect and identify poker hands using computer vision. The drone was designed to fly over a poker table, capture images of the cards, and analyze the images to determine the poker hand of each player.</p>
+                        <p><strong>Specific Role:</strong> As the sole developer, I was responsible for the entire project lifecycle, including designing the object detection algorithm, programming the drone's movement and image capture logic, and integrating the computer vision system. My role involved extensive coding in Python and utilizing libraries such as OpenCV and TensorFlow.</p>
+                        <p><strong>Learnings:</strong> Through this project, I enhanced my understanding of computer vision and machine learning concepts, particularly in the context of image recognition. I learned how to train and deploy object detection models for card recognition and integrate them with drone hardware. Additionally, I gained practical experience in real-time image processing and autonomous systems programming.</p>
+                        <p><strong>Challenges Overcome:</strong> One of the primary challenges was ensuring accurate detection and recognition of poker hands under varying lighting conditions and angles. This required training the model with a diverse dataset and implementing image preprocessing techniques. Another challenge was achieving real-time processing speeds to provide immediate feedback, which involved optimizing both the machine learning model and the drone's control algorithms.</p>
+                        <p><strong>Teamwork/Leadership:</strong> While this project was individual, I collaborated with peers working on similar computer vision projects by sharing insights and troubleshooting common issues. I also documented the entire process meticulously, providing a guide for others interested in similar projects and contributing to the collaborative learning environment.</p>
+                        <p><strong>Key Contributions:</strong></p>
+                        <ul>
+                            <li>Poker Hand Detection Algorithm Implementation</li>
+                            <li>Real-Time Image Processing</li>
+                            <li>Autonomous Movement and Image Capture Logic</li>
+                            <li>System Integration and Testing</li>
+                        </ul>
+                        <p><strong>Project Documentation:</strong> file:///Users/manishagarwal/Downloads/Drone%20Poker%20Hand%20Detector%20Project%20Documentation.pdf</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="page">
+                <h2>Contact</h2>
+                <p>Name: Akshat Agarwal</p>
+                <p>Address: 7472 Diamond Mountain Road</p>
+                <p>School: Emerald High School</p>
+                <p>Email: akshat0714@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
